@@ -166,7 +166,7 @@ echo "[7/6] Do you want to install LightDM and related packages? (y/n)"
 read -r answer
 if [[ "$answer" =~ ^[Yy]$ ]]; then
     # Install LightDM and Greeter packages
-    yay -S --noconfirm lightdm lightdm-gtk-greeter lightdm-theme-neon-bin
+    yay -S --noconfirm lightdm lightdm-gtk-greeter lightdm-webkit2-theme-sapphire 
     echo "✓ Installed LightDM, lightdm-gtk-greeter, and lightdm-theme-neon-bin."
 
     # Enable and start LightDM service
